@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Setting up Ghost on Apache subdomain"
 ---
 
@@ -42,9 +42,9 @@ For “ServerName” put in your subdomain url instead of `blog.sushant.me` and 
 
 Once you are done with this make sure you run the follwing commands:
 <ul>
-	<li>`sudo a2ensite example.com`</li>
-	<li>`sudo a2enmod proxy_http`</li>
-	<li>`sudo service apache2 restart`</li>
+	<li>sudo a2ensite example.com</li>
+	<li>sudo a2enmod proxy_http</li>
+	<li>sudo service apache2 restart</li>
 </ul>
 
 After this access `blog.sushant.me` and voila you're done.
