@@ -41,11 +41,10 @@ Now if we access either blog.example.com or example.com, apache services our req
 For “ServerName” put in your subdomain url instead of `blog.sushant.me` and also replace the IP address on the top line with your IP address.
 
 Once you are done with this make sure you run the follwing commands:
-<ul>
-	<li>sudo a2ensite example.com</li>
-	<li>sudo a2enmod proxy_http</li>
-	<li>sudo service apache2 restart</li>
-</ul>
+
+*		sudo a2ensite example.com
+*		sudo a2enmod proxy_http
+*		sudo service apache2 restart
 
 After this access `blog.sushant.me` and voila you're done.
 
