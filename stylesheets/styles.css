@@ -144,13 +144,13 @@ strong {
 }
 
 header ul li + li {
-  width:88px;
+  width:92px;
   border-left:1px solid #fff;
 }
 
 header ul li + li + li {
   border-right:none;
-  width:89px;
+  width:92px;
 }
 
 header ul a strong {
