@@ -93,9 +93,33 @@
         <br/>
         <hr/>
         <br/>
-        <div class="fb-like" data-href="http://sushant-hiray.github.io{{ page.url }}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
-        &nbsp;<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sushant-hiray.github.io{{ page.url }}" data-via="SushantHiray" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
-        <br/>
+        <div class="stats">
+          &nbsp; &nbsp; &nbsp;
+        </div>
+
+        <div class="buttons">
+
+            <!--
+all buttons below are explicitly set to use this post's full
+(canonical) absolute URL and are customized to be 20px tall.
+
+links:
+- http://www.google.com/webmasters/+1/button/
+- http://developers.facebook.com/docs/reference/plugins/like/
+- https://dev.twitter.com/docs/tweet-button
+
+all scripts are at the bottom.
+-->
+
+            <div class="g-plusone" data-size="medium" data-href="http://sushant-hiray.github.io{{ page.url }}"></div>
+
+            <a href="http://twitter.com/share" class="twitter-share-button" data-via="SushantHiray" data-related="SushantHiray"
+                data-url="http://sushant-hiray.github.io{{ page.url }}" data-text="{{ page.title | escape }}">Tweet</a>
+
+            <div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-href="http://sushant-hiray.github.io{{ page.url }}"></div>
+
+        </div>
+
         <div id="disqus_thread"></div>
       </section>
     <script type="text/javascript">
