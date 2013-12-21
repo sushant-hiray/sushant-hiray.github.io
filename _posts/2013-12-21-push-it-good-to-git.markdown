@@ -9,8 +9,10 @@ I was initially looking to use Sound Cloud API coz well spotify doesn't work in 
 So I just wrote a mini bash to emulate the push it to good to git for MAC!
 
 ###Instructions###
-			chmod +rx pushit
-			sudo mv pushit /usr/bin/
+{% highlight bash linenos %}
+		chmod +rx pushit
+		sudo mv pushit /usr/bin/
+{% endhighlight %}
 
 ###Usage###
 Use `pushit {branch-name}` instead of `git push origin {branch-name}`
@@ -21,7 +23,7 @@ Use `pushit {branch-name}` instead of `git push origin {branch-name}`
 * [Push it By Salt N Pepa][] Youtube link!
 
 ###Code###
-The code is up on [gist][]
+The entire code with dependencies is up on [gist][]
 {% gist 8065556 pushit %}
 
 [Push it to Good to Git in MAC]:http://valeriecoffman.com/git-push-it-good-salt-n-pepa/
