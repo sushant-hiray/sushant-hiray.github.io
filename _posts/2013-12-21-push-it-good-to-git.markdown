@@ -13,7 +13,7 @@ Everytime you push to your repository via `pushit`, it'll play the [Push it By S
 
 ###Instructions###
 {% highlight bash linenos %}
-		Configure your MPC and download all the dependencies from gist!
+	   Configure MPC and download all the dependencies from gist!
 		chmod +rx pushit
 		sudo mv pushit /usr/bin/
 {% endhighlight %}
