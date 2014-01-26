@@ -10,7 +10,7 @@ We’ve all been there, it sucks. And it sucks even more if there was a long run
 
 Well I faced this situation quite some times while working for our compiler's lab assignment this weekend and it pissed me enough to search for a solution!
 
-There is a very old and simple tool, that can help you to prevent this from happening. It is called — GNU Screen. I had a faint resemblance of seeing Manish using it, so I decided to explore it a bit more. Basically, screen allows you to create a virtual session inside your ssh session(or any console session), that isn’t bound to your connection. Meaning that if your connection drops, you will be able to connect to this virtual session afterwards. Hopefully, you already see the benefits you can get from using it, so let’s get to how you actually use it. 
+There is a very old and simple tool, that can help you to prevent this from happening. It is called — `GNU Screen`. I had a faint remembrance of seeing [Manish](https://www.facebook.com/manish.goregaokar) use it, so I decided to explore it a bit more. Basically, screen allows you to create a virtual session inside your ssh session(or any console session), that isn’t bound to your connection. Meaning that if your connection drops, you will be able to connect to this virtual session afterwards. Hopefully, you already see the benefits you can get from using it, so let’s get to how you actually use it. 
 
 
 
@@ -39,7 +39,7 @@ To start and new virtual session simply type `screen` into your console. Normall
 
 ##3. Communicating with screen
 
-Inside a virtual session you can initiate communication with the screen tool by pressing Ctrl + A, followed by a single letter command:
+Inside a virtual session you can initiate communication with the screen tool by pressing `Ctrl + A`, followed by a single letter command:
 
 `D` — ‘detach’. It detaches you from current session, leaving it running in background.
  
