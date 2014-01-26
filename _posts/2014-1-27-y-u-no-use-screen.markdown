@@ -1,15 +1,14 @@
 ---
 layout: posts
-title: "
-Y U NO USE screen"
+title: "Y U NO USE screen"
 ---
 
 Imagine a fairly common situation — you are ssh'ed to a remote server, doing stuff and then all of a sudden your internet connection drops and the console has frozen. And even after the connection is back, console won't respond, because the pipe between your computer and remote one has broken.
 
-Well I faced this situation quite some times while working for our compiler's lab assignment and it pissed me quite badly!
-
 We’ve all been there, it sucks. And it sucks even more if there was a long running process executed from that console say for example `scp`ing a huge file.
 
+
+Well I faced this situation quite some times while working for our compiler's lab assignment this weekend and it pissed me enough to search for a solution!
 
 There is a very old and simple tool, that can help you to prevent this from happening. It is called — GNU Screen. I had a faint resemblance of seeing Manish using it, so I decided to explore it a bit more. Basically, screen allows you to create a virtual session inside your ssh session(or any console session), that isn’t bound to your connection. Meaning that if your connection drops, you will be able to connect to this virtual session afterwards. Hopefully, you already see the benefits you can get from using it, so let’s get to how you actually use it. 
 
@@ -42,8 +41,9 @@ To start and new virtual session simply type `screen` into your console. Normall
 
 Inside a virtual session you can initiate communication with the screen tool by pressing Ctrl + A, followed by a single letter command:
 
-    `D` — ‘detach’. It detaches you from current session, leaving it running in background.
-    `K` — ‘kill’. This would terminate the screen session. It would probably ask you to confirm this, so press y if you are sure about it. Logging out from a virtual console also terminates it.
+`D` — ‘detach’. It detaches you from current session, leaving it running in background.
+ 
+`K` — ‘kill’. This would terminate the screen session. It would probably ask you to confirm this, so press y if you are sure about it. Logging out from a virtual console also terminates it.
 
 These are two commands that you would need for basic understanding of screen, but ofcourse, as most of the UNIX tools, `screen` has much more power underneath the bonet.
 
@@ -56,7 +56,7 @@ In case of a lost connection or to resume a previously started session, you need
 
 This command will attach you to a screen session. In case there are more then one active session, you’ll see a list of them. To connect to a particular screen, simply add it’s identifier as an argument:
 
-	screen -r 16873.pts-0.yourserver
+	screen -r 12345.pts-0.yourserver
 
 That way you can have multiple sessions running, allowing you to switch between them and not having to keep multiple ssh connections alive. To see a list of active screens, just type in:
 
