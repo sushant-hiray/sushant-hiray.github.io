@@ -73,3 +73,5 @@ and to restore that session:
 	screen -r something
 
 And that’s basically it. With these few simple commands in mind you won’t be afraid of a frozen consoles and “Broken pipe” error messages, because your session is safe and sound with screen. So go ahead try it and get used to it, because it will help you a lot.
+
+ps: The title is motivated by a blogpost I recently saw being shared on [Hacker News](http://news.ycombinator.com)
