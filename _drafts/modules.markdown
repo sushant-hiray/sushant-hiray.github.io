@@ -17,7 +17,7 @@
 
 ### Expected Additions (functions):
 
-* eval ( a basic eval, use some library for faster implementation)
+* eval ( a basic eval using lookup tables[1][2], use some library for faster implementation)
 * rewrite as exponential, and other trignometric symbols.
 * expand ( will be implemented after discussing with mentor)
 
@@ -42,3 +42,14 @@ Some more functions:
 * Look into library for fast implementation of `eval`. 
 
 
+##Complex Module
+
+### Current Status
+Unimplemented
+
+###Expected Addition
+
+
+
+[1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
+[2] https://github.com/certik/sympy/blob/trig/sympy/functions/elementary/trigonometric.py
