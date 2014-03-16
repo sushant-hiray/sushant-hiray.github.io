@@ -106,7 +106,7 @@ Expected Addition:
     private:
       RCP<const Basic> arg_; // The 'arg' in tf(arg)
     public:
-      Sin(const RCP<const Basic> &arg);
+      TF(const RCP<const Basic> &arg);
       virtual std::size_t __hash__() const;
       virtual bool __eq__(const Basic &o) const;
       virtual int compare(const Basic &o) const;
