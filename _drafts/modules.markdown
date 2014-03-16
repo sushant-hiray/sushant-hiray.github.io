@@ -70,19 +70,31 @@ Note: Handling of polar numbers will not be handled in current project
 
 
 ##Numbers Module
-After selecting the special functions the following special numbers have to be implemented.
+After selecting the special functions the following special numbers lie in the dependency list and have to be implemented.
 * Factorial
 * Bernoulli
+* sqrt
 
 
 ##Special Functions
 
 There are quite a few interesting functions which have been implemented in SymPy, I've looked through the functions and decided which ones to implement and thus in turn I had to implement the above said modules, to complete the dependency list.
 
+### Zeta Function
+Expected Addition:
+* Riemann Zeta => `eval`,`rewrite_as_dirichlet_eta`
+* Dirichlet_eta => `eval` , `rewrite_as_zeta`
 
 ###Gamma Function
+Expected Addition:
+* Gamma
+* UpperGamma
+* LowerGamma
 
 ### Tensor Functions
+Expected Addition:
+* LeviCivita
+* KroneckerDelta
 
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
