@@ -52,4 +52,5 @@ Unimplemented
 
 
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
+
 [2] https://github.com/certik/sympy/blob/trig/sympy/functions/elementary/trigonometric.py
