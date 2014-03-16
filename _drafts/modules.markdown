@@ -49,6 +49,15 @@ Unimplemented
 
 ###Expected Addition
 
+* re
+* img
+* arg
+* sign
+* abs
+* eval
+* conjugate
+
+Note: Handling of polar numbers will not be handled in current project
 
 
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
