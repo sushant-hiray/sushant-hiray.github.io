@@ -41,6 +41,15 @@ Some more functions:
 * There are quite a few more classes implemented such as `log`, `MRVlog`,`LambertW` in SymPy. These will not be implemented
 * Look into library for fast implementation of `eval`. 
 
+## Hyperbolic Module
+### Current Status
+Unimplemented.
+
+### Expected Addition
+* `sinh`,`cosh`,`tanh`,`coth`,`asinh`,`acosh`,`atanh`,`acoth`
+* Symbolic representation will be completed. Dependecy: Exponential Module
+* Fast evaluation. Use of some library or use cmath just for starters.
+
 
 ##Complex Module
 
@@ -59,6 +68,21 @@ Unimplemented
 
 Note: Handling of polar numbers will not be handled in current project
 
+
+##Numbers Module
+After selecting the special functions the following special numbers have to be implemented.
+* Factorial
+* Bernoulli
+
+
+##Special Functions
+
+There are quite a few interesting functions which have been implemented in SymPy, I've looked through the functions and decided which ones to implement and thus in turn I had to implement the above said modules, to complete the dependency list.
+
+
+###Gamma Function
+
+### Tensor Functions
 
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
