@@ -1,3 +1,4 @@
+# Project Details
 ## Trignometric Module
 
 ### Current Status:
@@ -34,7 +35,7 @@
 Unimplemented. `pow` class is implemented. 
 
 ###Expected Addition
-Currently `pow` class is implemented. Inherit the `exp` module from it.
+Currently `pow` class is implemented. Inherit the `exp` module from it. 
 
 Some more functions:
 * rewrite as cos, sin
@@ -95,6 +96,31 @@ Expected Addition:
 Expected Addition:
 * LeviCivita
 * KroneckerDelta
+
+
+#Implementation Details
+
+##Trignometric Module
+
+      class TF : public Function {
+    private:
+      RCP<const Basic> arg_; // The 'arg' in tf(arg)
+    public:
+      Sin(const RCP<const Basic> &arg);
+      virtual std::size_t __hash__() const;
+      virtual bool __eq__(const Basic &o) const;
+      virtual int compare(const Basic &o) const;
+      virtual std::string __str__() const;
+      bool is_canonical(const RCP<const Basic> &arg);
+      virtual RCP<const Basic> diff(const RCP<const Symbol> &x) const;
+      virtual RCP<const Basic> subs(const map_basic_basic &subs_dict) const;
+      --------------------------------------------------------------------
+      virtual RCP<const Basic> eval(); //eval will be a basic implementation
+                                       //for instance sin using lookup tables
+                                       //alternate libraries will be used for faster eval
+      virtual RCP<const Basic> rewrite_as_other_tf(); // for eg: rewrite_as_sin() rewrite_as_tan();
+      
+    };
 
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
