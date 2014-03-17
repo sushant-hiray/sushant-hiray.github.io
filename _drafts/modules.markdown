@@ -114,10 +114,10 @@ Expected Addition:
       virtual RCP<const Basic> diff(const RCP<const Symbol> &x) const;
       virtual RCP<const Basic> subs(const map_basic_basic &subs_dict) const;
       --------------------------------------------------------------------
-      virtual RCP<const Basic> eval(); //eval will be a basic implementation
+      RCP<const Basic> eval(); //eval will be a basic implementation
                                        //for instance sin using lookup tables
                                        //alternate libraries will be used for faster eval
-      virtual RCP<const Basic> rewrite_as_other_tf(); // for eg: rewrite_as_sin() rewrite_as_tan();
+      RCP<const Basic> rewrite_as_other_tf(); // for eg: rewrite_as_sin() rewrite_as_tan();
       
     };
 
@@ -138,9 +138,28 @@ Expected Addition:
           virtual RCP<const Basic> diff(const RCP<const Symbol> &x) const;
           virtual RCP<const Basic> subs(const map_basic_basic &subs_dict) const;
           virtual RCP<const Basic> rewrite_as_other_tf(); // for eg: rewrite_as_sin() rewrite_as_cos();
-          virtual RCP<const Basic> eval(); //alternate libraries will be used for faster eval
+          RCP<const Basic> eval(); //alternate libraries will be used for faster eval
           
       };
+
+
+##Hyperbolic Module
+      class HB : public Function {
+          private:
+            RCP<const Basic> arg_; // The 'arg' in tf(arg)
+          public:
+            HB(const RCP<const Basic> &arg);
+            virtual std::size_t __hash__() const;
+            virtual bool __eq__(const Basic &o) const;
+            virtual int compare(const Basic &o) const;
+            virtual std::string __str__() const;
+            bool is_canonical(const RCP<const Basic> &arg);
+            virtual RCP<const Basic> diff(const RCP<const Symbol> &x) const;
+            virtual RCP<const Basic> subs(const map_basic_basic &subs_dict) const;
+            RCP<const Basic> eval(); //alternate libraries will be used for faster eval
+            RCP<const Basic> rewrite_as_other_tf(); // for eg: rewrite_as_exp() rewrite_as_cosh();
+            RCP<const Basic> _eval_conjugate(): //needs a dependency of complex module
+       };
 
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
