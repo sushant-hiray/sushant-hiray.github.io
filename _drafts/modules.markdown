@@ -74,7 +74,6 @@ Note: Handling of polar numbers will not be handled in current project
 After selecting the special functions the following special numbers lie in the dependency list and have to be implemented.
 * Factorial
 * Bernoulli
-* sqrt
 
 
 ##Special Functions
@@ -121,6 +120,27 @@ Expected Addition:
       virtual RCP<const Basic> rewrite_as_other_tf(); // for eg: rewrite_as_sin() rewrite_as_tan();
       
     };
+
+##Exponential Module
+      
+      class exp : public Basic {
+      private:
+          RCP<const Basic> exp_; // base^exp
+      
+      public:
+          exp(const RCP<const Basic> &exp);
+          virtual std::size_t __hash__() const;
+          virtual bool __eq__(const Basic &o) const;
+          virtual int compare(const Basic &o) const;
+          virtual std::string __str__() const;
+          bool is_canonical(const RCP<const Basic> &exp);
+          inline RCP<const Basic> get_exp() const { return exp_; }
+          virtual RCP<const Basic> diff(const RCP<const Symbol> &x) const;
+          virtual RCP<const Basic> subs(const map_basic_basic &subs_dict) const;
+          virtual RCP<const Basic> rewrite_as_other_tf(); // for eg: rewrite_as_sin() rewrite_as_cos();
+          virtual RCP<const Basic> eval(); //alternate libraries will be used for faster eval
+          
+      };
 
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
