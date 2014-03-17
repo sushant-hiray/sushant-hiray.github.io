@@ -161,6 +161,65 @@ Expected Addition:
             RCP<const Basic> _eval_conjugate(): //needs a dependency of complex module
        };
 
+##Numbers Module
+      class Factorial: public function {
+            private:
+                  RCP<const Basic> arg_; // The 'arg' in tf(arg)
+            public:
+                  Factorial(const RCP<const Basic> &arg);
+                  virtual std::size_t __hash__() const;
+                  virtual bool __eq__(const Basic &o) const;
+                  virtual std::string __str__() const;
+                  bool is_canonical(const RCP<const Basic> &arg);
+                  RCP<const Basic> eval(); //gmp itself provides a fast version of eval
+      };
+      
+      //to be decided after having a discussion with mentor
+      //since bernoulli is an infinite sum, we might just get away with 
+      //implementing the eval for integers
+      //so a function just like in ntheory.cpp would be sufficient rather than a class
+      class Bernoulli: public function {
+            private:
+                  RCP<const Basic> arg_; // The 'arg' in tf(arg)
+            public:
+                  Bernoulli(const RCP<const Basic> &arg);
+                  virtual std::size_t __hash__() const;
+                  virtual bool __eq__(const Basic &o) const;
+                  virtual std::string __str__() const;
+                  bool is_canonical(const RCP<const Basic> &arg);
+                  RCP<const Basic> eval(); // arb[3] itself provides a fast version of eval
+      };
+  
+##Special Functions
+### Zeta Function
+      class Zeta: public function {
+            private:
+                  RCP<const Basic> arg_; // The 'arg' in tf(arg)
+            public:
+                  Zeta(const RCP<const Basic> &arg);
+                  virtual std::size_t __hash__() const;
+                  virtual bool __eq__(const Basic &o) const;
+                  virtual std::string __str__() const;
+                  bool is_canonical(const RCP<const Basic> &arg);
+                  RCP<const Basic> eval(); //dependencies: bernoulli, factorial
+                  RCP <const Basic> rewrite_as_dirichlet_eta();
+      };
+      
+### Dirichlet_eta Function
+      class Dirichlet_eta: public function {
+            private:
+                  RCP<const Basic> arg_; 
+            public:
+                  Dirichlet_eta(const RCP<const Basic> &arg);
+                  virtual std::size_t __hash__() const;
+                  virtual bool __eq__(const Basic &o) const;
+                  virtual std::string __str__() const;
+                  bool is_canonical(const RCP<const Basic> &arg);
+                  RCP<const Basic> eval(); //dependencies: zeta
+                  RCP <const Basic> rewrite_as_zeta();
+      };
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
 [2] https://github.com/certik/sympy/blob/trig/sympy/functions/elementary/trigonometric.py
+
+[3] http://fredrikj.net/arb/bernoulli.html
