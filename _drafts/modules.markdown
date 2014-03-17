@@ -250,6 +250,56 @@ Expected Addition:
       };
 
 
+### Gamma
+
+      class Gamma : public Function {
+          private:
+            RCP<const Basic> arg_; // The 'arg' in tf(arg)
+          public:
+            Gamma(const RCP<const Basic> &arg);
+            virtual std::size_t __hash__() const;
+            virtual bool __eq__(const Basic &o) const;
+            virtual int compare(const Basic &o) const;
+            virtual std::string __str__() const;
+            bool is_canonical(const RCP<const Basic> &arg);
+            RCP<const Basic> eval(); //dependency factorial
+            RCP<const Basic> _eval_conjugate(): //needs a dependency of complex module
+       };
+
+### Lower Gamma
+      
+      class LowerGamma : public Function {
+          private:
+            RCP<const Basic> arg_1_;
+            RCP<const Basic> arg_2_;
+          public:
+            LowerGamma(const RCP<const Basic> &arg1, const RCP<const Basic> &arg2);
+            virtual std::size_t __hash__() const;
+            virtual bool __eq__(const Basic &o) const;
+            virtual int compare(const Basic &o) const;
+            virtual std::string __str__() const;
+            bool is_canonical(const RCP<const Basic> &arg);
+            RCP<const Basic> eval();
+            RCP<const Basic> _eval_conjugate(): //needs a dependency of complex module
+       };
+      
+### Upper Gamma
+      
+      class UpperGamma : public Function {
+          private:
+            RCP<const Basic> arg_1_;
+            RCP<const Basic> arg_2_;
+          public:
+            UpperGamma(const RCP<const Basic> &arg1, const RCP<const Basic> &arg2);
+            virtual std::size_t __hash__() const;
+            virtual bool __eq__(const Basic &o) const;
+            virtual int compare(const Basic &o) const;
+            virtual std::string __str__() const;
+            bool is_canonical(const RCP<const Basic> &arg);
+            RCP<const Basic> eval();
+            RCP<const Basic> _eval_conjugate(): //needs a dependency of complex module
+       };
+       
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
 [2] https://github.com/certik/sympy/blob/trig/sympy/functions/elementary/trigonometric.py
