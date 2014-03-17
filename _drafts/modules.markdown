@@ -218,6 +218,21 @@ Expected Addition:
                   RCP<const Basic> eval(); //dependencies: zeta
                   RCP <const Basic> rewrite_as_zeta();
       };
+      
+### LeviCivita 
+      class LeviCivita: public function {
+            private:
+                  umap_basic_int dict_;
+            public:
+                  LeviCivita(const umap_basic_int& dict);
+                  virtual std::size_t __hash__() const;
+                  virtual bool __eq__(const Basic &o) const;
+                  virtual std::string __str__() const;
+                  RCP<const Basic> eval(); //dependencies: factorial
+      };
+
+
+
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
 [2] https://github.com/certik/sympy/blob/trig/sympy/functions/elementary/trigonometric.py
