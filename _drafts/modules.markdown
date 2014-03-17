@@ -82,8 +82,8 @@ There are quite a few interesting functions which have been implemented in SymPy
 
 ### Zeta Function
 Expected Addition:
-* Riemann Zeta => `eval`,`rewrite_as_dirichlet_eta`
-* Dirichlet_eta => `eval` , `rewrite_as_zeta`
+* Riemann Zeta[7] => `eval`,`rewrite_as_dirichlet_eta`
+* Dirichlet_eta[8] => `eval` , `rewrite_as_zeta`
 
 ###Gamma Function
 Expected Addition:
@@ -93,8 +93,8 @@ Expected Addition:
 
 ### Tensor Functions
 Expected Addition:
-* LeviCivita
-* KroneckerDelta
+* LeviCivita [4]
+* KroneckerDelta [5]
 
 
 #Implementation Details
@@ -232,9 +232,36 @@ Expected Addition:
       };
 
 
+### KroneckerDelta
+      class KroneckerDelta: public function {
+            private:
+                  RCP<const Basic> arg_1_ , arg_2_; 
+            public:
+                  LeviCivita(RCP<const Basic> arg_1_ ,RCP<const Basic> arg_2_);
+                  virtual std::size_t __hash__() const;
+                  virtual bool __eq__(const Basic &o) const;
+                  virtual std::string __str__() const;
+                  RCP<const Basic> eval();
+                  bool  is_below_fermi();
+                  bool  is_above_fermi();
+                  bool  is_only_below_fermi();
+                  bool  is_only_above_fermi();
+                  RCP<const Basic> _get_preferred_index();
+      };
+
 
 [1] http://stackoverflow.com/questions/3688649/create-sine-lookup-table-in-c
 
 [2] https://github.com/certik/sympy/blob/trig/sympy/functions/elementary/trigonometric.py
 
 [3] http://fredrikj.net/arb/bernoulli.html
+
+[4] http://en.wikipedia.org/wiki/Levi-Civita_symbol
+
+[5] http://en.wikipedia.org/wiki/Kronecker_delta
+
+[6] https://gmplib.org/manual/Number-Theoretic-Functions.html#Number-Theoretic-Functions
+
+[7] http://en.wikipedia.org/wiki/Riemann_zeta_function
+
+[8] http://en.wikipedia.org/wiki/Dirichlet_eta_function
