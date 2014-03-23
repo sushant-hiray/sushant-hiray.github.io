@@ -2,6 +2,9 @@
 layout: posts
 title: "Using Jekyll"
 ---
+
+Yet another Jekyll blog on awesomeness of Jekyll!
+
 Since last couple of weeks, we've been busy setting up a "community" website for WnCC. The main philosophy behind the website setup is that, anyone should be able to add content to the website, and not just the admin group, which has been the case always.
 
 Being a group of enthusiastic developers, trying to automate the deployment process and version controlling the content were on the top of the priority list.
