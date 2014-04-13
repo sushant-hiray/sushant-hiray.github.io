@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kalman filter demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="lib/jquery-1.7.1.js"></script>
+    <script src="lib/sylvester.src.js"></script>
+    <script src="lib/raphael.js"></script>
+    <script src="kalman.js"></script>
+    <script src="demo.js"></script>
+  </head>
+  <body>
+    <div id="canvas">
+    </div>
+    <div class="description">
+      <h3>Kalman filter demo Prediction Only</h3>
+
+      <ul>
+        <li><a href="http://www.cse.iitb.ac.in/~pb/cs344-2014/">CS 344: Introduction to AI</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Kalman_filter">Wikipedia: Kalman filters</a></li>
+        <li>Made with <a href="http://sylvester.jcoglan.com/">Sylvester linear algebra library</a></li>
+        <li>Made with <a href="http://raphaeljs.com/">Raphael graphics library</a></li>
+      </ul>
+
+      <p>
+        <button id="reset">Reset the demo</button>
+      </p>
+
+    </div>
+    <div class="numbers">
+    </div>
+    <div class="credits">
+      Made by A.S.N.V for the <a href="http://www.cse.iitb.ac.in/~pb/cs344">CS 344: Introduction to AI</a> Seminar.
+    </div>
+  </body>
+</html>
