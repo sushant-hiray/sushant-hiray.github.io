@@ -4,3 +4,7 @@ permalink: /posts/:title
 auto: true
 rdiscount:
   extensions: [smart]
+
+name: Sushant Hiray's Web Space
+description: My rants on coding
+url: http://sushant-hiray.in
