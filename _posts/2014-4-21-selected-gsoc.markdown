@@ -16,5 +16,5 @@ I have discussed my timeline in quite some details both in [SymPy mailinglist](h
 This might get refined a bit during the ongoing community bonding period!
 
 ##Road Ahead
-Officially GSoC starts from May 19, well but we would probably start shipping in code post midsems.
+Officially GSoC starts from May 19, well but we would probably start shipping in code post endsems.
 If you are free this summer and would love to contribute, feel free to catch us up at [gitter](https://gitter.im/sympy/csympy). We will help you get started. Till then sayonara, will continue posting updates hopefully each week! :)
