@@ -1,6 +1,12 @@
 ---
-layout: posts
+layout: post
 title: "Y U NO USE screen"
+tags: [sample post, readability, test]
+comments: true
+image:
+  feature: texture-feature-04.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
 ---
 
 Imagine a fairly common situation — you are ssh'ed to a remote server, doing stuff and then all of a sudden your internet connection drops and the console has frozen. And even after the connection is back, console won't respond, because the pipe between your computer and remote one has broken.

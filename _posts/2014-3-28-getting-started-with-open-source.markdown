@@ -1,6 +1,12 @@
 ---
-layout: posts
+layout: post
 title: "Getting Started With Open Source"
+tags: [sample post, readability, test]
+comments: true
+image:
+  feature: texture-feature-04.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
 ---
 
 Open source is so ubiquitous nowadays that its inevitable you are benefiting from it every day even if you don’t know it just by using applications on the desktop, web, or mobile. The applications you use most likely have dependencies that are open source. If you’re on Mac or Linux, the unix kernel that powers them is open source.
