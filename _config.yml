@@ -1,13 +1,13 @@
 title:            Sushant Hiray's Web Space
 description:      My rants on programming
-url:              http://localhost:4000
+url:              http://sushant-hiray.in
 disqus_shortname: sushantgitblog
 
 # Owner/author information
 owner:
   name:           Sushant Hiray
   avatar:         bio-photo.jpg
-  bio:            "Describe your self."
+  bio:            "Ahead by x-commits"
   email:          hiraysushant@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        SushantHiray
