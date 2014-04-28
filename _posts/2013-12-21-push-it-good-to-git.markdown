@@ -1,7 +1,14 @@
 ---
-layout: posts
+layout: post
 title: "How to “Push It Good” to Git"
+tags: [sample post, readability, test]
+comments: true
+image:
+  feature: texture-feature-04.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
 ---
+
 
 A couple of days back I saw a tweet regarding [Push it to Good to Git in MAC][]. It was interesting so I built up a quick hack to emulate the same on linux.
 

@@ -1,6 +1,12 @@
 ---
-layout: posts
+layout: post
 title: "Setting up post-receive hook"
+tags: [sample post, readability, test]
+comments: true
+image:
+  feature: texture-feature-04.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
 ---
 
 Recently, we switched to using [Jekyll](http://jekyllrb.com/) for our [WnCC](http://wncc-iitb.org/) website.

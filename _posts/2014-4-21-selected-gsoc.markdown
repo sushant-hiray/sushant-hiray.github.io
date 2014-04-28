@@ -1,7 +1,13 @@
 ---
-layout: posts
+layout: post
 category: gsoc
 title: "GSoC in Project CSymPy"
+tags: [sample post, readability, test]
+comments: true
+image:
+  feature: texture-feature-04.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
 ---
 
 Well its endsem time and probably the first time I'm quite happy during this period. I've been selected for [GSoC](http://www.google-melange.com/gsoc/homepage/google/gsoc2014) under the organization [SymPy](http://www.google-melange.com/gsoc/org2/google/gsoc2014/sympy).

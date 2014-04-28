@@ -1,6 +1,12 @@
 ---
-layout: posts
+layout: post
 title: "Setting up Ghost on Apache subdomain"
+tags: [sample post, readability, test]
+comments: true
+image:
+  feature: texture-feature-04.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
 ---
 
 Ghost runs on top of node.js instead of apache or nginx. If you already have a website running on apache you will need to take a few extra steps in order to allow node.js to run along side apache
