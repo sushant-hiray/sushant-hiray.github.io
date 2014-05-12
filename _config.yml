@@ -32,7 +32,7 @@ links:
     url: /projects/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Kolkata
 future:      true
 pygments:    true
 markdown:    kramdown
