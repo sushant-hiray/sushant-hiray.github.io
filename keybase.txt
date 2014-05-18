@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/sushanthiray
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://sushant-hiray.in
+  * I am sushanthiray (https://keybase.io/sushanthiray) on keybase.
+  * I have a public key with fingerprint 125D ED94 7C31 1C89 9889  244D 5101 C557 F786 F2C3
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "125ded947c311c899889244d5101c557f786f2c3",
+            "host": "keybase.io",
+            "key_id": "5101c557f786f2c3",
+            "uid": "d52da3b6737ff3a12f558d8434fc4b00",
+            "username": "sushanthiray"
+        },
+        "service": {
+            "hostname": "sushant-hiray.in",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1401028898,
+    "expire_in": 157680000,
+    "prev": null,
+    "seqno": 1,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.17
+Comment: https://keybase.io/crypto
+
+yMLUAnicbZF9TBN3GMdbXtR2c7asbhlzI/xAyRTKXdvrXU9lw+ECW4URqJUNqNe7
+a++g3JXrFS0VHM7uJSUz0awkNTM4cEsWUjeXEeQlgiNlWVUW5kYUWZiM4AvrHyhq
+cCNeyfbHkv3+ufye7+f5fp/fPaPrk2VKOZP8eekFcwctjw0PeGUVR+TAD+w85QO4
+H9TTqx8HyzlpwS2wnAhwAOsQiqZMBpTUwzCJmUwYZtIZDBQCQzCJIKgDxYwOHakH
+uYDhPYkOycZOeGgty0s16WJjKan6P7x3VaAQHUXo7UZUjzocegLWORAEozCD3uAg
+DXYISoAeWuCIBlqiPV4PQ3AiwwqED7TkAklpYklJ8a/G/5fKW8W0LCd5uAVe5Ene
+JamMKLrxRLPocyfoA7Td9o+Pzc5ylPR+qaGJFjwszwEclkhSZBPGsAGCIZ30B7Bc
+QB90swJtk8xxGEGNGCSdRAzdBHDO63IlZmvkeEmVgghnYirWyRGiV6BBy8WR6hSZ
+XClbk5qU2IFMqVD9u5mrFSpZwPxgsOejKlFx45Ps8Fs1107UvfzF0kB8PHOn5nQJ
+sff3X9sHt3fO+uo3p84kP+N/t0w1GRkrZaqy9kyCJtS0e7FduDj8qRw+l13hn4mO
+iOWFgmXtQ9oQ6wa1SS9ucaJHr9S2TeabssammJpAQ3pHsXmj1bKc9nO/RbtlGbp2
+pQJZufloNDW7ZcbWd4SKRPLTr+9LGXr22NzKpcZdXdreEvygpTvy4+19tyA6xzqR
+Zh4G5eoN1k22LFWfYunQeqV/oZKIxZq/Kem+vrOeKT5V1OGLBnrOIJet98873vSn
+Q/f3L9RPo2yZlu/ZMW1rrV40lS0dKnYHc7rCi1d5zb3hl/ZeSArI2+yjE+811+yp
++yV1t7Lww68yd2jiKwvM0ht541/LOn/C1KcPr23xt4471ca5bxVzE3RozdR4/0gB
+eQftPJum2jrWmJcxZI7hz+2KH/9hw8Aj3/zCxnjfJaVn5LY8OB/+7rzinnxu67p1
+++N3N9c9vis0FFUObv+guffyUCB6o6D05LnM8jOejHlmaMKYUTWoevupA+qjlZpX
+NuXefK2g/U9qVm86drI3qnzhjy+r32mbDXU///eiJthc+1n1q5H88DLyMf7w+zuH
+jwertrn+Sgl1ncr8ze2aer39VsRlebow9lh9NlTHWB+0hr3924oao7Xx96eD8ydC
+OZYnyuJ7sg==
+=U9fW
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sushanthiray
+
+==================================================================
