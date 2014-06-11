@@ -4,6 +4,7 @@ category: gsoc
 title: "This Week in CSymPy: #3"
 tags: [readability, test]
 comments: true
+date: 2014-6-11 13:00:00 +0530
 ---
 
 Week 3 for GSoC just ended and we decided to work on fixing bugs which were high priority.
