@@ -45,6 +45,19 @@
     <div class="article-wrap">
       {{ content }}
       <hr />
+      {% if page.post %}
+      <div class="kudosElement">
+        <figure class="kudo kudoable" data-id="1">
+          <a class="kudobject">
+              <div class="opening"><div class="circle">&nbsp;</div></div>
+          </a>
+          <a href="#kudo" class="count">
+            <span class="num">0</span>
+            <span class="txt">Kudos</span>
+          </a>
+          </figure>
+      </div><!-- Kudos-wrap -->
+      {% endif %}
       <footer role="contentinfo">
         <div class="article-author-bottom">
           {% include _author-bio.html %}

@@ -1,6 +1,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+{% if page.post %}
+<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+<script src="{{ site.url }}/assets/js/kudos.js"></script>
+<script src="{{ site.url }}/assets/js/kudos-update.js"></script>
+{% endif %}
 {% if page.comments %}
   {% include _disqus_comments.html %}
 {% endif %}
