@@ -10,6 +10,7 @@ div.opening{
     border-radius:50%;
     margin:0 auto;
     border:5px solid #000;
+    margin-left:0px;
     position:relative}
 div.opening div.circle{
     background-color:#000;
@@ -75,9 +76,11 @@ a.count span {
 }
 a.count span.num {
     font-size: 18px;
+    margin-left:25px;
 }
 a.count span.txt {
     font-size: 11px;
+    margin-left:10px;
 }
 a.count p span.dont-move{
     font-size:18px;
