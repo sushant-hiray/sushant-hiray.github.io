@@ -50,5 +50,5 @@ The Week Ahead
 * Add the `LambertW` class.
 * Implement the `Hyperbolic Module`.
 
-<br/><br/>
+<br/>
 Thats all for now :) Will get back next week!
