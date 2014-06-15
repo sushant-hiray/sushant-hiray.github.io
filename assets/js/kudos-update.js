@@ -48,7 +48,15 @@ $("figure.kudo").bind("kudo:added", function(e)
 		console.log("updated value to " + (current_val + 1));
 		return current_value + 1;
 	    }
-    });
+    }, function(error, committed, snapshot) {
+  if (error) {
+    console.log('Transaction failed abnormally!', error);
+  } else if (!committed) {
+    console.log('some crap happened');
+  } else {
+    console.log('Data updated!');
+  }
+  console.log("data count is: ", snapshot.val()););
 });
 
 // after removing a kudo
@@ -61,7 +69,16 @@ $("figure.kudo").bind("kudo:removed", function(e)
 	x.transaction(function(current_value) {
 	    console.log("reducing the data to " + (current_value - 1));
 	    return current_value - 1;
-    });
+    }, , function(error, committed, snapshot) {
+  if (error) {
+    console.log('Transaction failed abnormally! ', error);
+  } else if (!committed) {
+    console.log('some crap happened');
+  } else {
+    console.log('Data updated!');
+  }
+  console.log("data count is: ", snapshot.val()););
+});
 	
 
 	// remove cookie
