@@ -1,90 +1,87 @@
-var pathArray = window.location.pathname.split( '/' );
-var postId =  pathArray[3];
+var pathArray = window.location.pathname.split('/');
+var postId = pathArray[3];
 console.log("postid is " + postId);
-$(function()
-{
-// initialize kudos
-$("figure.kudoable").kudoable();
+$(function() {
+  // initialize kudos
+  $("figure.kudoable").kudoable();
 
-// check to see if user has already kudoed
-if($.cookie(postId) == 'true') {
-	// make kudo already kudod
-	$("figure.kudoable").removeClass("animate").addClass("complete");
+  // check to see if user has already kudoed
+  if ($.cookie(postId) == 'true') {
+    // make kudo already kudod
+    $("figure.kudoable").removeClass("animate").addClass("complete");
 
-	// your server would take care of the proper kudos count, but because this is a
-	// static page, we need to set it here so it doesn't become -1 when you remove
-	// the kudos after a reload
-	$(".num").html(1);
-}	
+    // your server would take care of the proper kudos count, but because this is a
+    // static page, we need to set it here so it doesn't become -1 when you remove
+    // the kudos after a reload
+    $(".num").html(1);
+  }
 
-// when kudoing
-$("figure.kudo").bind("kudo:active", function(e)
-{
-	console.log("kudoing active");
-});
+  // when kudoing
+  $("figure.kudo").bind("kudo:active", function(e) {
+    console.log("kudoing active");
+  });
 
-// when not kudoing
-$("figure.kudo").bind("kudo:inactive", function(e)
-{
-	console.log("kudoing inactive");
-});
+  // when not kudoing
+  $("figure.kudo").bind("kudo:inactive", function(e) {
+    console.log("kudoing inactive");
+  });
 
-// after kudo'd
-$("figure.kudo").bind("kudo:added", function(e)
-{
-	var element = $(this);
-	// ajax'y stuff or whatever you want
-	console.log("Kodo'd:", element.data('id'), ":)");
+  // after kudo'd
+  $("figure.kudo").bind("kudo:added", function(e) {
+    var element = $(this);
+    // ajax'y stuff or whatever you want
+    console.log("Kodo'd:", element.data('id'), ":)");
 
-	// set cookie so user cannot kudo again for 7 days
-	$.cookie(postId, 'true', { expires: 7 });
-	
-	x.transaction(function(current_value) {
-	    if(current_value === null) {
-		console.log("creating the data");
-		return 1;
-	    }
-	    else {
-		console.log("updated value to " + (current_val + 1));
-		return current_value + 1;
-	    }
+    // set cookie so user cannot kudo again for 7 days
+    $.cookie(postId, 'true', {
+      expires: 7
+    });
+
+    x.transaction(function(current_value) {
+      if (current_value === null) {
+        console.log("creating the data");
+        return 1;
+      } else {
+        console.log("updated value to " + (current_val + 1));
+        return current_value + 1;
+      }
     }, function(error, committed, snapshot) {
-  if (error) {
-    console.log('Transaction failed abnormally!', error);
-  } else if (!committed) {
-    console.log('some crap happened');
-  } else {
-    console.log('Data updated!');
-  }
-  console.log("data count is: ", snapshot.val()););
-});
+      if (error) {
+        console.log('Transaction failed abnormally!', error);
+      } else if (!committed) {
+        console.log('some crap happened');
+      } else {
+        console.log('Data updated!');
+      }
+      console.log(" data: ", snapshot.val());
+    });
 
-// after removing a kudo
-$("figure.kudo").bind("kudo:removed", function(e)
-{
-	var element = $(this);
-	// ajax'y stuff or whatever you want
-	console.log("Un-Kudo'd:", element.data('id'), ":(");
-	
-	x.transaction(function(current_value) {
-	    console.log("reducing the data to " + (current_value - 1));
-	    return current_value - 1;
-    }, , function(error, committed, snapshot) {
-  if (error) {
-    console.log('Transaction failed abnormally! ', error);
-  } else if (!committed) {
-    console.log('some crap happened');
-  } else {
-    console.log('Data updated!');
-  }
-  console.log("data count is: ", snapshot.val()););
-});
-	
+    // after removing a kudo
+    $("figure.kudo").bind("kudo:removed", function(e) {
+      var element = $(this);
+      // ajax'y stuff or whatever you want
+      console.log("Un-Kudo'd:", element.data('id'), ":(");
 
-	// remove cookie
-	$.removeCookie(postId);
+      x.transaction(function(current_value) {
+        console.log("reducing the data to " + (current_value - 1));
+        return current_value - 1;
+      }, function(error, committed, snapshot) {
+        if (error) {
+          console.log('Transaction failed abnormally!', error);
+        } else if (!committed) {
+          console.log('some crap happened');
+        } else {
+          console.log('Data updated!');
+        }
+        console.log(" data: ", snapshot.val());
+      });
+
+
+      // remove cookie
+      $.removeCookie(postId);
+    });
+  });
 });
-});	
 
 var x = new Firebase('https://sweltering-fire-7891.firebaseio.com/' + postId);
 console.log("x is " + x);
