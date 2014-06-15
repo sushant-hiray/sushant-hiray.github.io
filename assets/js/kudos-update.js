@@ -34,13 +34,13 @@ $("figure.kudo").bind("kudo:added", function(e)
 {
 	var element = $(this);
 	// ajax'y stuff or whatever you want
-	//console.log("Kodo'd:", element.data('id'), ":)");
+	console.log("Kodo'd:", element.data('id'), ":)");
 
 	// set cookie so user cannot kudo again for 7 days
 	$.cookie(postId, 'true', { expires: 7 });
 	
 	x.transaction(function(current_value) {
-    return current_value + 1;
+	    return current_value + 1;
     });
 });
 
@@ -49,10 +49,10 @@ $("figure.kudo").bind("kudo:removed", function(e)
 {
 	var element = $(this);
 	// ajax'y stuff or whatever you want
-	//console.log("Un-Kudo'd:", element.data('id'), ":(");
+	console.log("Un-Kudo'd:", element.data('id'), ":(");
 	
 	x.transaction(function(current_value) {
-    return current_value - 1;
+	return current_value - 1;
     });
 
 	// remove cookie
@@ -61,7 +61,9 @@ $("figure.kudo").bind("kudo:removed", function(e)
 });	
 
 var x = new Firebase('https://sweltering-fire-7891.firebaseio.com/' + postId);
+console.log("x is" + x);
 
 x.on('value', function f(s) {
+  console.log("x on value is called" + s.val());
   $('.num').text(0 + s.val());
 });
