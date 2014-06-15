@@ -1,5 +1,5 @@
 var pathArray = window.location.pathname.split( '/' );
-var postId =  pathArray[1];
+var postId =  pathArray[3];
 console.log("postid is " + postId);
 $(function()
 {
