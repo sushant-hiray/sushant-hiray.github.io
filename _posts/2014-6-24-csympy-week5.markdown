@@ -17,10 +17,6 @@ I started the week by implementing `LambertW` function. It wasn't a part of the 
 <br/><br/>
 If you're unaware, LambertW function is defined as the inverse function of x*exp(x). This function represents the principal branch  of this inverse function, which is multivalued. For more information, see:
 [wiki](http://en.wikipedia.org/wiki/Lambert_W_function). [Pull 200](https://github.com/sympy/csympy/pull/200) implemented the LambertW class!
-
-[Pull 189](https://github.com/sympy/csympy/pull/189) looked into implementing the `ATan2` functionality. Since to implement `ATan2` we needed to find whether the signs of numerator and denominators. In case of complex symbolic expressions, we are yet to implement `numeric-eval` in CSymPy, so in those cases we just
-return the object, in cases where we find the `arg` in lookup table we simplify and give out the result.
-With LambertW merged into master, we have covered all the classes implemented by SymPy in its exponential module.
 <br/><br/>
 After this, I worked on Hyperbolic module, which was the main target for this week. [Pull 203](https://github.com/sympy/csympy/pull/203) implemented the hyperbolic module. 
 In addition to the normal functions which were implemented as a part of the TrigFunction API, we implemented `expand_as_exp` in the Hyperbolic Module.
@@ -54,7 +50,7 @@ Quite an interesting week this has been as far as milestones are concerned!
 
 The Week Ahead
 ==============
-* Implement the `Complex Module`.
+* Implement the long awaited `Complex` Module.
 
 <br/>
 Thats all for now :) Will get back next week!
