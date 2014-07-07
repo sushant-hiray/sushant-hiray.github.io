@@ -1,9 +1,8 @@
 ---
 layout: home
-description: "A responsive Jekyll theme with editorial tendencies by designer Michael Rose."
+description: "This is Sushant Hiray's website!"
 tags: [Jekyll, theme, responsive, blog, template]
 image:
   feature: home.jpeg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+=======
 ---
