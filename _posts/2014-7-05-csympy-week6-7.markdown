@@ -30,11 +30,11 @@ I will speed up during the next week and hope to merge the Complex Module.
 Week Highlights!
 ================
 
-* Somewhere around this period, I crossed 100 commits into CSymPy master. Its been a long journey since I first started contributing to CSymPy.
+Somewhere around this period, I crossed 100 commits into CSymPy master. Its been a long journey since I first started contributing to CSymPy.
 
 The Week Ahead
 ==============
-* Complete the basic API for `Complex` Module and merge it into master.
+Complete the basic API for `Complex` Module and merge it into master.
 
 <br/>
 Thats all for now :) Will get back next week!
