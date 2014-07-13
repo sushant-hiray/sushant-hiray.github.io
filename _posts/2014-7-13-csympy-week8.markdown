@@ -4,7 +4,7 @@ category: gsoc
 title: "This Week in CSymPy: #8"
 tags: [readability, test]
 comments: true
-date: 2014-7-05 11:15:00 +0530
+date: 2014-7-13 11:15:00 +0530
 description: GSoC Week 8 Updates
 ---
 
