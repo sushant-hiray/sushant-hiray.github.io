@@ -17,8 +17,8 @@ I hadn't made much progress last week as I was traveling back home. So I had onl
 <br/><br/>
 I also noticed that some of the files I had commented out earlier had a mismatched tab configuration. So I fixed the mismatch identation for all the files in the project. [Pull 242](https://github.com/sympy/csympy/pull/242) fixed this issue.
 <br/><br/>
-While writing tests for the Complex Module, I noticed that there was no explicit divide by zero check in the code and as a result, on division by zero, we were getting a coredumped. I filed this as [#239](https://github.com/sympy/csympy/issues/239)
-[Pull 241](https://github.com/sympy/csympy/pull/241) fixed this issue.
+While writing tests for the Complex Module, I noticed that there was no explicit divide by zero check in the code and as a result, on division by zero, we were getting a coredumped. This issue was filed as [#239](https://github.com/sympy/csympy/issues/239) which was subsequently fixed via
+[Pull 241](https://github.com/sympy/csympy/pull/241).
 <br/><br/>
 After some fixes and adding divide by zero checks in the complex module, the [Pull 223](https://github.com/sympy/csympy/pull/223)  was merged. With this in place, we can perform all basic operations on complex integers as well as rationals. The only exception being pow. It was decided that complex `pow` shouldn't evaluated by default. Also since the current definition of `pow` returns a `RCP<const Number>` so it needs to be refactored to account the current design.
 
