@@ -5,7 +5,7 @@ title: "GSoC Week 9: Complexions in Complex Module"
 tags: [readability, test]
 comments: true
 date: 2014-7-23 23:00:00 +0530
-description: GSoC Week 8 Updates
+description: GSoC Week 9 Updates
 ---
 
 Week 9 for GSoC ended a couple of days back. I'm still working on the Complex Module.
