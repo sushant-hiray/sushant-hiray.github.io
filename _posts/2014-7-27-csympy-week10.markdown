@@ -4,7 +4,7 @@ category: gsoc
 title: "GSoC Week 10: Complex Complexions Resolved"
 tags: [readability, test]
 comments: true
-date: 2014-7-23 23:00:00 +0530
+date: 2014-7-28 00:35:00 +0530
 description: GSoC Week 10 Updates
 ---
 
@@ -51,16 +51,27 @@ Out[10]: -1 + 2*I*x + x^2
 {% endhighlight %}
 
 <br/><br/>
-
+The other major work in this week was to work on the expansion of integral powers of complex number.
+[Pull 264](https://github.com/sympy/csympy/pull/264) was created to add this functionality. We used a particularly simple yet efficient algorithm to compute the integral power.
+{% highlight python %}
+def powu(x, n):
+    mask = 1
+    r = 1
+    p = x
+    while (mask > 0 and n >= mask):
+        if (n & mask):
+            r = r*p
+        mask <<= 1
+        p = p*p
+    return r
+{% endhighlight %}
 <br/><br/>
-One important fix needed was to improve the printing. Over the entire PR, the printing has been changed multiple times to match the SymPy output. With this PR I've updated the current existing printing for `add`, `mul` as well as `pow`
+The current expand is a bit slower than what we were expecting. We will be looking to improve the speed in the coming days.
 <br/><br/>
-The `expand` function is also updated to handle the case of Complex Numbers. Currently it doesn't expand terms like: `(2 + 3I)^n`. Apart from this all the issues which were found have been fixed.
-
 
 The Week Ahead
 ==============
-Merge the current PR and send a new PR for handling the cases like `(2 + 3I)^n` in `expand`
+As per the proposal, I will be implementing the Zeta Function.
 
 <br/>
 Thats all for now :) Will get back next week!
