@@ -4,74 +4,34 @@ category: gsoc
 title: "GSoC Week 11: Interacing ARB"
 tags: [readability, test]
 comments: true
-date: 2014-7-28 00:35:00 +0530
-description: GSoC Week 10 Updates
+date: 2014-8-03 19:52:00 +0530
+description: GSoC Week 11 Updates
 ---
 
-After a significant amount of work in the past couple of weeks, I've finally completed the Complex Module.
+This week was primarily focussed on interfacting [ARB](fredrikj.net/arb/) library with CSymPy.
+
+Arb is a C library for arbitrary-precision floating-point ball arithmetic, developed by [Fredrik Johansson](fredrik.johansson@gmail.com). It supports efficient high-precision computation with polynomials, power series, matrices and special functions over the real and complex numbers, with automatic, rigorous error control.
 
 Progress
 ========
-
-This week I merged [PR 248](https://github.com/sympy/csympy/pull/248) which covered almost the entire of the complex module.
+I opened [PR 265](https://github.com/sympy/csympy/pull/265) to interfact ARB with CSymPy. There were some initial hiccups with using ARB for C++. I opened up an issue [arb/#21](https://github.com/fredrik-johansson/arb/issues/21) which was very promptly fixed by [@fredrik-johansson](https://github.com/fredrik-johansson) with a minor patch.
 <br/><br/>
-After merging this PR, Complex Numbers and `I` could be used in sync with other existing modules in CSymPy.
-[@certik](https://github.com/certik) refined the Python wrappers to integrate the Complex Module.
-Here are the some of the things which could be done using CSymPy python wrappers:
+Since we were using an earlier release version 2.1.0 without this patch, [@fredrik-johansson](https://github.com/fredrik-johansson) willingly released a new version 2.2.0 so that we could interface immediately.
 <br/><br/>
-{% highlight python %}
-In [1]: from csympy import *
-
-In [2]: I
-Out[2]: I
-
-In [3]: I**2
-Out[3]: -1
-
-In [4]: I+1
-Out[4]: 1 + I
-
-In [5]:  (I+1)**2
-Out[5]: 2*I
-
-In [6]: (1+I*2)**(-1)
-Out[6]: 1/5 - 2/5*I
-
-In [7]: x = Symbol('x')
-
-In [8]: x+I*x
-Out[8]: (1 + I)*x
-
-In [9]: ((2*I + x)*x).expand()
-Out[9]: 2*I*x + x^2
-
-In [10]: ((x + I)**2).expand()
-Out[10]: -1 + 2*I*x + x^2
-
-{% endhighlight %}
-
+I was particularly in twaeaking around with CMAKE to interface ARB. I read quite a bit about it and managed to get a basic version running. But there were quite a few issues:
+* flint and arb were not getting linked
+* arb was not searching `/usr/local/include/flint` for appropriate files of flint.
 <br/><br/>
-The other major work in this week was to work on the expansion of integral powers of complex number.
-[Pull 264](https://github.com/sympy/csympy/pull/264) was created to add this functionality. We used a particularly simple yet efficient algorithm to compute the integral power.
-{% highlight python %}
-def powu(x, n):
-    mask = 1
-    r = 1
-    p = x
-    while (mask > 0 and n >= mask):
-        if (n & mask):
-            r = r*p
-        mask <<= 1
-        p = p*p
-    return r
-{% endhighlight %}
+I put some minor hacks to make sure arb was linked and was able to find the files appropriately.
+Since Ondrej was out this week, he wasn't able to suggest any better ways yet. Isuru Fernando helped me out with a much cleaner way to link the arb and flint library.
 <br/><br/>
-The current expand is a bit slower than what we were expecting. We will be looking to improve the speed in the coming days.
-<br/><br/>
+I also added the Zeta Module comprising of `zeta` and `dirichlet_eta` functions.
+The `zeta` function needs `harmonic` to be implemented, which isn't implemented yet so for now, only minor simplifications are made.
+
 
 The Week Ahead
 ==============
-As per the proposal, I will be implementing the Zeta Function.
+Get the current PR merged, add a new PR for the Tensor Module.
 
 <br/>
 Thats all for now :) Will get back next week!
