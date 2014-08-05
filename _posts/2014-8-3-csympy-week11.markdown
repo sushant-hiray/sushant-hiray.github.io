@@ -8,7 +8,7 @@ date: 2014-8-03 19:52:00 +0530
 description: GSoC Week 11 Updates
 ---
 
-This week was primarily focussed on interfacting [ARB](fredrikj.net/arb/) library with CSymPy.
+This week was primarily focussed on interfacting [ARB](http://fredrikj.net/arb/) library with CSymPy.
 
 Arb is a C library for arbitrary-precision floating-point ball arithmetic, developed by [Fredrik Johansson](fredrik.johansson@gmail.com). It supports efficient high-precision computation with polynomials, power series, matrices and special functions over the real and complex numbers, with automatic, rigorous error control.
 
