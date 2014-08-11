@@ -4,7 +4,7 @@ category: gsoc
 title: "GSoC Week 12: Wrapping Up"
 tags: [readability, test]
 comments: true
-date: 2014-8-03 19:52:00 +0530
+date: 2014-8-11 13:15:00 +0530
 description: GSoC Week 12 Updates
 ---
 
@@ -45,10 +45,6 @@ It comprises of :
 [PR 269](https://github.com/sympy/csympy/pull/269) is implementing the Gamma Module. Currently only `Gamma` is implemented.
 
 <br/><br/>
-I also added the Zeta Module comprising of `zeta` and `dirichlet_eta` functions.
-The `zeta` function needs `harmonic` to be implemented, which isn't implemented yet so for now, only minor simplifications are made.
-
-
 
 The Week Ahead
 ==============
