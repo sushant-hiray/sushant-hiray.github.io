@@ -16,9 +16,9 @@ This is an illustrated guide of how to use your IRC client. I will try to cover 
 ##What is IRC? 
 
 IRC stands for Internet relay chat, it basically refers to the entire system of global Servers, clients and people chatting online in global chat rooms.
-
+<br/><br/>
 <img src="{{ site.url }}/images/irc.png">
-
+<br/><br/>
 ##What is this Freenode I keep hearing/reading about? 
 
 Freenode is one of the most popular IRC servers online. Basically, you connect to an IRC server and join an IRC channel on that server and then talk to people there.
@@ -37,7 +37,7 @@ The \#things looking thing you see is called an IRC channel , once you connect t
 
 ##Waartaa
 
-Waartaa is an easy to use web application. Go to [waarta.org](http://try.waarta.org) 
+Waartaa is an easy to use web application. Go to [waartaa.com](https://try.waartaa.com/) 
 
 ##Chatzilla Install
 
@@ -49,11 +49,11 @@ Waartaa is an easy to use web application. Go to [waarta.org](http://try.waarta.
 <hr/>
 This is mainly if you're using irssi. In case you're using waarta/chatzilla/mibbit, you'll be asked in the popup windows for a nick name and the channel to connect.
 
-```
-/nick theOneTrueKnight
-/server irc.mozilla.org (or whatever your server's URI is)  
-/join #introduction (or whatever channel you wish to join)  
-```
+
+	/nick theOneTrueKnight
+	/server irc.mozilla.org (or whatever your server's URI is)  
+	/join #introduction (or whatever channel you wish to join) 
+
 
 #Commonly Used Commands
 <hr/>
