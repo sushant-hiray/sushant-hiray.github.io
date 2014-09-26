@@ -17,7 +17,7 @@ This is an illustrated guide of how to use your IRC client. I will try to cover 
 
 IRC stands for Internet relay chat, it basically refers to the entire system of global Servers, clients and people chatting online in global chat rooms.
 <br/><br/>
-<img src="{{ site.url }}/images/irc.png">
+<img src="{{ site.url }}/images/irc.jpg">
 <br/><br/>
 
 ##What is this Freenode I keep hearing/reading about? 
