@@ -19,6 +19,7 @@ IRC stands for Internet relay chat, it basically refers to the entire system of 
 <br/><br/>
 <img src="{{ site.url }}/images/irc.png">
 <br/><br/>
+
 ##What is this Freenode I keep hearing/reading about? 
 
 Freenode is one of the most popular IRC servers online. Basically, you connect to an IRC server and join an IRC channel on that server and then talk to people there.
