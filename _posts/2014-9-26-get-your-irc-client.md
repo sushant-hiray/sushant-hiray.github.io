@@ -54,7 +54,7 @@ This is mainly if you're using irssi. In case you're using waarta/chatzilla/mibb
 
 Freenode is one of the most popular IRC servers online. Basically, you connect to an IRC server and join an IRC channel on that server and then talk to people there.
 
-##What are these weird things that look like `#this-is-weird`? 
+##What are these weird things that look like \#this-is-weird? 
 
 The `#things` looking thing you see is called an IRC channel , once you connect to a server, you need to join a channel which in crude terms is the equivalent of a chat room.
 
@@ -88,7 +88,6 @@ This is perhaps the most important section. Following are some essential etiquet
 * Rule \#1: Don't ask to ask
 * Rule \#2: Behave as you would do in a real life conversation
 * Rule \#3: Be patient. If there is no activity, it usually means that no one has read what you wrote yet. If no one responds, they don't know or didn't notice. You can re-try after a while, or ask if anyone has any clue with regards to your question x minutes ago.
-
 * Rule \#4: Don’t PM (i.e `/msg sushant`) without asking for the user’s prior permission on the channel, it’s considered rude by some people and generally not welcome without good reason.
 * Rule \#5:  Be considerate of other people’s time-zones. The US is roughly 11:30 to 13:30 hours behind Indian Standard Time, Europe is roughly 4:30 to 6:30 hours behind IST, while Japan is roughly 2 hours ahead.
 
