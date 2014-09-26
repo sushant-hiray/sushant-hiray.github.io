@@ -11,8 +11,6 @@ This is an illustrated guide of how to use your IRC client. I will try to cover 
 * Waartaa
 * Chatzilla
 
-#Basic Introduction
-<hr/>
 ##What is IRC? 
 
 IRC stands for Internet relay chat, it basically refers to the entire system of global Servers, clients and people chatting online in global chat rooms.
@@ -20,21 +18,13 @@ IRC stands for Internet relay chat, it basically refers to the entire system of 
 <img src="{{ site.url }}/images/irc.jpg">
 <br/><br/>
 
-##What is this Freenode I keep hearing/reading about? 
-
-Freenode is one of the most popular IRC servers online. Basically, you connect to an IRC server and join an IRC channel on that server and then talk to people there.
-
-##What are these weird channel things that look like \#this-is-weird I keep hearing/seeing? 
-
-The \#things looking thing you see is called an IRC channel , once you connect to a server, you need to join a channel which in crude terms is the equivalent of a chat room.
-
 #Downloading your favorite IRC client
+<hr/>
 
 ##IRSSI Install
 
-* For Fedora, CentOS users sudo yum install irssi
 * For Ubuntu, Debian users sudo apt-get install irssi or sudo aptitude install irssi
-* Other Linux distributions might want to use their respective package managers.
+* For Fedora, CentOS users sudo yum install irssi
 
 ##Waartaa
 
@@ -56,13 +46,26 @@ This is mainly if you're using irssi. In case you're using waarta/chatzilla/mibb
 	/join #introduction (or whatever channel you wish to join) 
 
 
+
+#FAQ's
+<hr/>
+
+##What is this Freenode I keep seeing everywhere? 
+
+Freenode is one of the most popular IRC servers online. Basically, you connect to an IRC server and join an IRC channel on that server and then talk to people there.
+
+##What are these weird things that look like `#this-is-weird`? 
+
+The `#things` looking thing you see is called an IRC channel , once you connect to a server, you need to join a channel which in crude terms is the equivalent of a chat room.
+
+
 #Commonly Used Commands
 <hr/>
 * `/nick your_nick` : Change your IRC nick.
-* `/server your.server.url` : Connect to a server.
-* `/join #channel-name` : Join a channel.
+* `/server irc.mozilla.org` : Connect to a server.
+* `/join #introduction` : Join a channel.
 * `/quit` : Quits. Obviously.
-* `/msg someone_else's_nick Hi` : Private message someone. (This opens up a new window once the other party responds)
+* `/msg sushant Hi` : Private message someone. (This opens up a new window once the other party responds)
 * `/away afk` : mark yourself as away citing the reason as “afk”. It’s curteous to mark yourself as away, when you’re not around.
 * `/away` (or `/back`) : An away command without an explanation marks you as not-away.
 * `/userlist` to get a list of users on the current channel.
@@ -75,12 +78,18 @@ Nick registration serves a bunch of purposes, namely:
 * It gives you an identity, people can recognize you from.
 * You can join channels that require a registered nick, #python, #fedora are examples.
 * It safegaurds and reserves your nick (the one thing people identify you with) on IRC, so that people always know it’s you they’re talking to.
+* Protip: In case you've a common nick try keeping your IRC connections persistent ([irssi + screen](http://www.antonfagerberg.com/archive/my-perfect-irssi-setup/) helps to do that)
 
 #IRC Etiquette
 <hr/>
-This is perhaps the most important section. There’s some basic etiquette that’s considered in good taste, keeping it in mind, and using your common sense, will usually save you from commiting a faux pas.
+This is perhaps the most important section. Following are some essential etiquettes:
 
-* Please don’t expect an immediate response, waiting times vary from 15 minutes to over 24 hours at times depending on channel traffic, timezone and holidays, weekends and so on. If you’ve got things to do, let the IRC client run in the background and carry on with your other work.
-* Pls dnt typ lyk dis!!!1 , You won’t be taken seriously. Ever.
-* Don’t PM (i.e `/msg some_user`) without asking for the user’s prior permission on the channel, it’s considered rude by some people and generally not welcome without good reason.
-* Be considerate of other people’s time-zones. The US is roughly 11:30 to 13:30 hours behind Indian Standard Time, Europe is roughly 4:30 to 6:30 hours behind IST, while Japan is roughly 2 hours ahead. What’s morning for you is probably not for the rest of the world, act accordingly.
+
+* Rule \#1: Don't ask to ask
+* Rule \#2: Behave as you would do in a real life conversation
+* Rule \#3: Be patient. If there is no activity, it usually means that no one has read what you wrote yet. If no one responds, they don't know or didn't notice. You can re-try after a while, or ask if anyone has any clue with regards to your question x minutes ago.
+
+* Rule \#4: Don’t PM (i.e `/msg sushant`) without asking for the user’s prior permission on the channel, it’s considered rude by some people and generally not welcome without good reason.
+* Rule \#5:  Be considerate of other people’s time-zones. The US is roughly 11:30 to 13:30 hours behind Indian Standard Time, Europe is roughly 4:30 to 6:30 hours behind IST, while Japan is roughly 2 hours ahead.
+
+Thats it all for now. Will get back with some more interesting posts.
