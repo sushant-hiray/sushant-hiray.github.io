@@ -12,12 +12,12 @@ This is an illustrated guide of how to use your IRC client. I will try to cover 
 * Chatzilla
 
 #Basic Introduction
-  
+<hr/>
 ##What is IRC? 
 
 IRC stands for Internet relay chat, it basically refers to the entire system of global Servers, clients and people chatting online in global chat rooms.
 
-<img src="{{ site.url }}/images/irc.png"></a>
+<img src="{{ site.url }}/images/irc.png">
 
 ##What is this Freenode I keep hearing/reading about? 
 
@@ -46,17 +46,17 @@ Waartaa is an easy to use web application. Go to [waarta.org](http://try.waarta.
 
 
 #Connecting to IRC Channel
-
+<hr/>
 This is mainly if you're using irssi. In case you're using waarta/chatzilla/mibbit, you'll be asked in the popup windows for a nick name and the channel to connect.
 
-'''
+```
 /nick theOneTrueKnight
 /server irc.mozilla.org (or whatever your server's URI is)  
 /join #introduction (or whatever channel you wish to join)  
-'''
+```
 
 #Commonly Used Commands
-
+<hr/>
 * `/nick your_nick` : Change your IRC nick.
 * `/server your.server.url` : Connect to a server.
 * `/join #channel-name` : Join a channel.
@@ -68,6 +68,7 @@ This is mainly if you're using irssi. In case you're using waarta/chatzilla/mibb
 
 
 #Registering your Nick
+<hr/>
 Nick registration serves a bunch of purposes, namely:
 
 * It gives you an identity, people can recognize you from.
@@ -75,7 +76,7 @@ Nick registration serves a bunch of purposes, namely:
 * It safegaurds and reserves your nick (the one thing people identify you with) on IRC, so that people always know it’s you they’re talking to.
 
 #IRC Etiquette
-
+<hr/>
 This is perhaps the most important section. There’s some basic etiquette that’s considered in good taste, keeping it in mind, and using your common sense, will usually save you from commiting a faux pas.
 
 * Please don’t expect an immediate response, waiting times vary from 15 minutes to over 24 hours at times depending on channel traffic, timezone and holidays, weekends and so on. If you’ve got things to do, let the IRC client run in the background and carry on with your other work.
