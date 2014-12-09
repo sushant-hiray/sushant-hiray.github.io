@@ -3,7 +3,7 @@ https://keybase.io/sushanthiray
 
 I hereby claim:
 
-  * I am an admin of http://sushant-hiray.in
+  * I am an admin of https://sushant-hiray.me
   * I am sushanthiray (https://keybase.io/sushanthiray) on keybase.
   * I have a public key with fingerprint 718E 9B71 960B BB70 F2C0  4716 83AA 016B 21A2 C99C
 
