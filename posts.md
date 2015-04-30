@@ -1,5 +1,5 @@
 ---
-layout: post-index
+layout: base
 permalink: /posts/
 title: All Posts
 image:
