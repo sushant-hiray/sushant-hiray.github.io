@@ -396,16 +396,12 @@ article::before {
 } 
 
 article:nth-child(2) .title {
-  line-height: 43px;
-  font-size: 38px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: bold;
 }
 
 article:nth-child(2) p {
-  line-height: 28.5px;
-  font-size: 19px;
   color: #4d4d4d;
 }
 
