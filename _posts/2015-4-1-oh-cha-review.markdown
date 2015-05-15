@@ -29,10 +29,11 @@ Finally, it was time for the dessert. We were all hoping this will make up for t
 Disappointing albeit an unique experience. Might visit it again to give another chance and perhaps à la carte this time.
 
 Final Verdict:
-Food: 2.5/5
-Service: 4/5
-Ambience: 4/5
-Value for Money: 2/5
+
+* Food: 2.5/5
+* Service: 4/5
+* Ambience: 4/5
+* Value for Money: 2/5
 
 Overall I would rate it  2.5/5.
 
