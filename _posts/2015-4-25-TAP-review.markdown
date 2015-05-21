@@ -6,7 +6,17 @@ tags: [sample post, readability, test]
 comments: true
 ---
 
+    Address: 3rd Floor, Link Square Mall, Linking Road, Above Global Fusion, Bandra West, Mumbai
 
+    Telephone: 022 33956196
+
+    Cuisines: Mexican, Italian, North Indian
+
+    Overall Rating: 3.5/5
+
+
+REVIEW:
+======
 Continuing to explore new places, this time as a part of our ERR meet, we decided to give TAP a try. It was a Saturday and we met for lunch. I fortunately managed to reach just in time, before food was about to be ordered.
 
 REACHING TAP:

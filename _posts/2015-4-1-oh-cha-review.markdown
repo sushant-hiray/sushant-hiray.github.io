@@ -6,6 +6,18 @@ tags: [sample post, readability, test]
 comments: true
 ---
 
+    Address: Unit 1, The New Mahalaxmi Silk Mills Premises, Mathurdas Mills Compound, Lower Parel, Mumbai
+
+    Telephone: 022 30151138
+
+    Cuisines: Thai
+
+    Overall Rating: 2.5/5
+
+
+REVIEW:
+======
+
 I was pretty much aloof wrt Thai cuisine before visiting o:h cha and was really looking forward to it. We were a group of foodies who decided to meetup here. We made reservations via gourmetitup (now wowtables) for a 10-course set meal.
 
 Reaching here was a tricky affair, situated in a small lane offside Senapati Bapat Marg. It is situated amongst quite a few famous restaurants and we had a tough time figuring where it was until we saw the little hoarding. Entering inside was a delight, the big cane baskets holding the lights caught our attention. The ambiance was beautiful, our table set, we were offered the gourmetitup menu for the 10 course meal.

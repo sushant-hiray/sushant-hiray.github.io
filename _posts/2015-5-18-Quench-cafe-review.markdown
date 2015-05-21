@@ -6,7 +6,17 @@ tags: [sample post, readability, test]
 comments: true
 ---
 
+    Address: Shop 3, Varsha building, JP Road, Seven Bungalows, Versova, Andheri West, Mumbai
 
+    Telephone: 022 30151813
+
+    Cuisines: Cafe, Italian, Continental, Fast Food
+
+    Overall Rating: 4/5
+
+
+REVIEW:
+======
 
 After watching an interesting play at Prithvi Theatre we decided to try some place different to eat apart from the usual Prithvi cafe. A quick search on Zomato led us to this place. After an eventful 20 minute ride, we reached the destination. The place stands apart from the neighborhood. It's a small, vibrant cafe and we hoped our long ride to the cafe better be worth it.
 
