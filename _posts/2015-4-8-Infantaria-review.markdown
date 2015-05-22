@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Hotel Ramashray Review"
+title: "Infantaria Review"
 category: food
 tags: [sample post, readability, test]
 comments: true
 ---
 
-    Address: Lake Home Complex, Chandivali, Mumbai
+    Address: 5/181, Calangute Baga Junction, Calangute, Goa
 
-    Telephone: 022 30151946
+    Telephone: 0832 3291290
 
-    Cuisines: Pizza, Fast Food
+    Cuisines: North Indian, Continental, Goan, Seafood
 
-    Overall Rating: 3.5/5
+    Overall Rating: 4/5
 
 
 REVIEW:
