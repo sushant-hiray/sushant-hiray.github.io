@@ -39,9 +39,9 @@ They also have a pan shop right outside to end the visit on a high. We did not i
 The entire affair cost us about 150 rupees which is almost nothing compared to the awesome food they serve.
 
 Final verdict:
-
-Ambience: 3/5
-Food: 4.5/5
-Service: 4/5
-Value for money: 5/5
-Overall: 4/5
+==============
+* Ambience: 3/5
+* Food: 4.5/5
+* Service: 4/5
+* Value for money: 5/5
+* Overall: 4/5
