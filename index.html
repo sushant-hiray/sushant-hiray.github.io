@@ -9,7 +9,7 @@ title: Home
 </article>
 
 <section id="post">
-{% for post in site.posts limit:5 %}    
+{% for post in site.posts limit:15 %}    
     {% if post.category != "food" %}
         {% include post_desc.html %}
     {% endif %}
