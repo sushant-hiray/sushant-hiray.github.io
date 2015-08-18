@@ -2,7 +2,7 @@
 layout: post
 title: "Turning 22"
 tags: [sample post, readability, test]
-comguysts: true
+comments: true
 permalink: /turning-22/
 ---
 
