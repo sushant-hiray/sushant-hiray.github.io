@@ -19,7 +19,7 @@ owner:
 timezone:    Asia/Kolkata
 future:      true
 highlighter:  pygments
-markdown:    redcarpet
+markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /posts/:categories/:title/
@@ -27,6 +27,3 @@ lsi: true
 exclude: ['README.markdown', 'README_FOR_COLLABORATORS.markdown', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'LICENSE.txt']
 production: false
 paginate: 5
-
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
