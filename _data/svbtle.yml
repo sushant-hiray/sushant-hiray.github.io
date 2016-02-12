@@ -15,5 +15,5 @@ ga_account: your-ga-code-here
 ga_domain: svbtlejekyll.example.com
 
 # Enable kudos widget
-enable_kudos: true
+enable_kudos: false
 kudos_url: http://kudos-server-example.herokuapp.com/kudos
