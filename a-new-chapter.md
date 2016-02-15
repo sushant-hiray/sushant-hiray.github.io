@@ -30,7 +30,7 @@ Life's not about what is given on your plate
 In the end, it's about what you create
 ```
 
-You have adventure, success and love to look forward to.
+You have adventure, success, love and a new chapter to look forward to.
 
 Lots of love
 <3
