@@ -1,19 +1,17 @@
 ---
 subtitle: "Foodie. Coder. Reader. Binge Watching.<br/>Open Source Evangelist"
-profile_url: http://sushant-hiray.me/
+profile_url: https://sushant-hiray.me/
 profile_picture: bio-photo.jpg
 profile_name: Sushant Hiray
-website_url: http://sushant-hiray.me
+website_url: https://sushant-hiray.me
 website_url_text: This is a nice blog with stuff
-website_url_about: http://sushant-hiray.me/about
+website_url_about: https://sushant-hiray.me/about
 website_name: Sushant Hiray's Webspace
 email_with_subject: mailto:hiraysushant@gmail.com?subject=hi
 twitter: SushantHiray
-feed_url: http://feedurlhere.com
-typekit_url: typekiturlhere
 ga_account: your-ga-code-here
 ga_domain: svbtlejekyll.example.com
 
 # Enable kudos widget
 enable_kudos: false
-kudos_url: http://kudos-server-example.herokuapp.com/kudos
+kudos_url: 

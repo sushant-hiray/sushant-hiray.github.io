@@ -23,15 +23,15 @@
     <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/styles.css"/>
     <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/responsive.css"/>
     <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/github.css"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/font-awesome.min.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/raleway.css"/>
     <script data-cfasync="false" type="text/javascript" src="{{page.typekit_url}}"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="application/ld+json">
     { "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Sushant Hiray",
-      "url" : "http://sushant-hiray.me",
+      "url" : "https://sushant-hiray.me",
       "sameAs" : [ "http://www.facebook.com/sushant.hiray",
           "http://instagram.com/sushanthiray",
           "http://www.linkedin.com/in/sushanthiray",
@@ -39,17 +39,6 @@
           "http://twitter.com/SushantHiray"] 
     }
     </script>
-    {% if site.data.svbtle.enable_kudos && site.data.svbtle.kudos_url %}
-      <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/kudos.css"/>
-      <script data-cfasync="false" src="/assets/javascripts/jquery.min.js"></script>
-      <script data-cfasync="false" type="text/javascript" src="/assets/javascripts/kudos.js"></script>
-      <script>
-        $(function() {
-          Kudos.KudoURL = "{{site.data.svbtle.kudos_url}}";
-          Kudos.fetchCount();
-        });
-      </script>
-    {% endif %}
   </head>
   <body style="zoom: 1;">
     <div class="main-container main-view">
