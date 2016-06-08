@@ -8,7 +8,7 @@ permalink: /new-chapter/
 
 > Dear Ygritte,
 
-By the time you get this, you are officially starting a new revolution around the Sun, a new chapter is about to dawn. I think you are quite mad at me or not talking or wishing you. But well, I think we aren't the usual ones, we are the misfits, the rebels living far off in centuries behind where posts are delivered by hand, so I figured this might very well land a bit late on your plate.
+By the time you get this, you are officially starting a new revolution around the Sun, a new chapter is about to dawn. I think you are quite mad at me for not talking or wishing you. But well, I think we aren't the usual ones, we are the misfits, the rebels living far off in centuries behind where posts are delivered by hand, so I figured this might very well land a bit late on your plate.
 
 ```
 Leaving your bygone years behind, 
@@ -30,7 +30,7 @@ Life's not about what is given on your plate
 In the end, it's about what you create
 ```
 
-You have adventure, success and love to look forward to.
+You have adventure, success, love and a new chapter to look forward to.
 
 Lots of love
 <3
