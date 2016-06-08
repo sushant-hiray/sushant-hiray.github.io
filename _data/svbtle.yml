@@ -11,7 +11,7 @@ email_with_subject: mailto:hiraysushant@gmail.com?subject=hi
 twitter: SushantHiray
 ga_account: your-ga-code-here
 ga_domain: svbtlejekyll.example.com
-
+feed_url: https://sushant-hiray.me/feed.all.xml
 # Enable kudos widget
 enable_kudos: false
 kudos_url: 
