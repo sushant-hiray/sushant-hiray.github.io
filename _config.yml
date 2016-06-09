@@ -24,7 +24,6 @@ markdown:    kramdown
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /posts/:categories/:title/
 lsi: true
-include: ['.htaccess']
 exclude: ['README.markdown', 'README_FOR_COLLABORATORS.markdown', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'LICENSE.txt']
 production: false
 paginate: 5
