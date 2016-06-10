@@ -3,8 +3,11 @@ layout: post
 title: "Integrating Python into Scala Stack"
 tags: [sample post, readability, test]
 comments: true
-image: "{{ site.url }}/assets/images/python.png"
+image: "/assets/images/python.png"
+excerpt_separator: <!--more-->
 ---
+Integrating various python machine learning libraries in scala stack
+<!--more-->
 
 This post will walk you through integrating python machine-learning libraries into your existing scala stack. 
 

@@ -15,8 +15,8 @@
     <meta property="og:type" content="blog">
     <meta property="og:url" content="{{site.url}}{{page.url}}">
     <meta property="og:site_name" content="Sushant Hiray's Webspace">
-    <meta property="og:image" content="{% if page.image %}{{ page.image }}{% endif %}">
-    <meta property="og:description" content="{{page.excerpt}}">
+    <meta property="og:image" content="{% if page.image %}{{site.url}}{{ page.image }}{% endif %}">
+    <meta property="og:description" content="{{page.excerpt| strip_html | strip_newlines}}">
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.all.xml"/>
     <!-- libraries -->
     <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/styles.css"/>
