@@ -54,4 +54,4 @@ Once you are done with this make sure you run the follwing commands:
 
 After this access `blog.sushant.me` and voila you're done.
 
-Note: this tutorial assumes that you have properly installed ghost as stated on the shost documentation.
+Note: this tutorial assumes that you have properly installed ghost as stated on the ghost documentation.

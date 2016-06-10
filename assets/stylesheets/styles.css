@@ -207,7 +207,7 @@ h3,
 h4,
 h5,
 h6{font-size:100%;font-weight:bold;}
-
+.website {list-style:none;}
 /* responsive.css */
 @media only screen and (max-width:1024px){.read-more.button{max-width:200px;}
 }
