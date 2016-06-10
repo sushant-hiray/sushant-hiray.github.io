@@ -9,14 +9,14 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %} Sushant Hiray's Webspace </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sushant Hiray's Webspace">
-    <link rel="canonical" href="https://sushant-hiray.me">
+    <link rel="canonical" href="{{site.url}}{{page.url}}">
     <meta property="twitter:creator" content="@SushantHiray">
-    <meta property="og:title" content="@SushantHiray">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %} Sushant Hiray's Webspace">
     <meta property="og:type" content="blog">
-    <meta property="og:url" content="https://sushant-hiray.me">
+    <meta property="og:url" content="{{site.url}}{{page.url}}">
     <meta property="og:site_name" content="Sushant Hiray's Webspace">
-    <meta property="og:image" content="{% if page.image %}{{ page.image }}">
-    <meta property="og:description" content="{% if page.title %}{{ page.title }} | {% endif %} Sushant Hiray's Webspace">
+    <meta property="og:image" content="{% if page.image %}{{ page.image }}{% endif %}">
+    <meta property="og:description" content="{{page.excerpt}}">
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.all.xml"/>
     <!-- libraries -->
     <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/styles.css"/>
