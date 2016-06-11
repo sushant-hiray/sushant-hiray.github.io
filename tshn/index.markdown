@@ -8,7 +8,7 @@ repository_url: http://github.com/sushant-hiray/tshn
 
 <h2>What is this?</h2>
 Pretty simple. Every 15 minutes, TSHN scrapes the first page of Hacker News and generates a new page containing the top stories from the past 24 hours sorted in descending order by overall points.
-You can checkout a quick demo <a href="http://wncc-iitb.org/tshn"> here </a>
+You can checkout a quick demo <a href="http://tshn.sushant-hiray.me"> here </a>
 <br/><br/>
 
 <h2> How do I make this work? </h2>

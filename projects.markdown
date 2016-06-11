@@ -2,8 +2,6 @@
 layout: page
 permalink: /projects/
 comments: true
-image:
-  feature: projects.jpg
 ---
 
 <h1>Code that Might be Useful to You</h1>
@@ -28,12 +26,12 @@ To get a feel of the exact working, we implemented a basic version of Kalman Fil
 <hr/>
 
 <h2><a href="/tshn">TSHN</a></h2>
-<p>TSHN i.e Top Stories of Hacker News is a tool which scrapes the front page of Hacker News every 15 min. It combines all the top stories from the last 24 hours and displays it sorted via karma-points the stories have earned. You can check a live demo <a href="https://wncc-iitb.org/tshn/"><del>here</del></a>. Not being hosted anymore :(<br/>
+<p>TSHN i.e Top Stories of Hacker News is a tool which scrapes the front page of Hacker News every 15 min. It combines all the top stories from the last 24 hours and displays it sorted via karma-points the stories have earned. You can check a live demo <a href="http://tshn.sushant-hiray.me"><del>here</del></a>
 <hr/>
 
 <h2><a href="https://github.com/sushant-hiray/car-pool">Car Pool</a></h2>
 <p>Car Pool is a PHP based car pooling webapp. It is currently based on inter city locations and boasts of covering all Tier-I,II,III cities. A simple minimalist UI which ranks users and categories them according to estimated fuel saved by using the web app!</p>
 <hr/>
 
-<p>You can as well look into some of my hacks which are turned into blog posts <a href="/posts">here</a></p>
+<p>You can as well look into some of my hacks which are turned into blog posts <a href="https://sushant-hiray.me/posts">here</a></p>
 
