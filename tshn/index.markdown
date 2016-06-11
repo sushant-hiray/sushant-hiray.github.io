@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: post
 title: TSHN ~ Top Stories of Hacker News in last 24 hours
 zip_url: https://github.com/sushant-hiray/tshn/zipball/master
 issue_url: https://github.com/sushant-hiray/tshn/issues/new
 repository_url: http://github.com/sushant-hiray/tshn
 ---
 
-<h1>TSHN ~ Top Stories of Hacker News in last 24 hours</h1>
-<hr/>
 <h2>What is this?</h2>
 Pretty simple. Every 15 minutes, TSHN scrapes the first page of Hacker News and generates a new page containing the top stories from the past 24 hours sorted in descending order by overall points.
 You can checkout a quick demo <a href="http://wncc-iitb.org/tshn"> here </a>

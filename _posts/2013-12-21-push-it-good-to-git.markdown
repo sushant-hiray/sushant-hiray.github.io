@@ -12,19 +12,23 @@ I was initially looking to use Sound Cloud API coz well spotify doesn't work in 
 So I just wrote a mini bash to emulate the push it to good to git for MAC!
 
 > What does this do?
+
 Everytime you push to your repository via `pushit`, it'll play the [Push it By Salt N Pepa][] song! Oh ofcourse you can change the song to your own favorite version by tweaking the bash file!
 
 > Instruction
+
 {% highlight bash %}
-	   Configure MPC and download all the dependencies from gist!
-		chmod +rx pushit
-		sudo mv pushit /usr/bin/
+	// Configure MPC and download all the dependencies from gist!
+	chmod +rx pushit
+	sudo mv pushit /usr/bin/
 {% endhighlight %}
 
 > Usage
+
 Use `pushit {branch-name}` instead of `git push origin {branch-name}`
 
 > Credits
+
 * Inspired by [Push it to Good to Git in MAC][]
 * Credits to configure mpc [Dilawar][]
 * [Push it By Salt N Pepa][] Youtube link!
