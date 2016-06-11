@@ -1,16 +1,9 @@
 ---
-layout: base
+layout: post
 permalink: /talks/
-title: Talks
+title: Talks I've Given
 comments: true
-image:
-  feature: talks.jpeg
 ---
-
-<article class="post">
-<h1 class="title"><a href="{{site.url}}/talks/">Talks I've Given</a></h1>
-</article>
-<hr/>
 
 <section id="post">
 

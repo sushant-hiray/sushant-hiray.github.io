@@ -4,7 +4,6 @@ title: What's the fuss about Open Source
 ---
 
 <hr/>
-<h2>What's the fuss about Open Source</h2>
 Recently I gave a talk for <a href="http://www.wncc-iitb.org">WnCC</a> .
 <br/><br/>
 

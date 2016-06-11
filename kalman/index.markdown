@@ -1,0 +1,24 @@
+---
+layout: post
+title: Kalman Filter in Robot Localization
+---
+
+<h1>Kalman Filter in Robot Localization</h1>
+<hr/>
+<h2>What is this?</h2>
+Recently we gave a presentation for our <a href="http://www.cse.iitb.ac.in/~pb/c344-2014">Introduction to AI</a> course.
+<br/><br/>
+
+<h2> Presentation </h2>
+<script async class="speakerdeck-embed" data-id="75aca110a5360131d925128fba479dd0" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<br/><br/>
+<h2>Demo's</h2>
+To get a feel of the exact working, we implemented a basic version of Kalman Filters in Javascipt.
+We implemented 3 different versions which show why Kalman Filter works:
+<ul>
+	<li><a href="prediction-only">Prediction Only version</a> This version signifies why both prediction and correction are necessary</li>
+	<br/>
+	<li><a href="covariance-zero">Covariance Zero version</a> In continuation with the above version, we made the covariance zero, as a result the green blob doesn't change in size</li>
+	<br/>
+	<li><a href="best">Final version</a> This is the complete version with implemented algorithm. </li>
+</ul>
