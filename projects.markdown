@@ -26,7 +26,7 @@ To get a feel of the exact working, we implemented a basic version of Kalman Fil
 <hr/>
 
 <h2><a href="/tshn">TSHN</a></h2>
-<p>TSHN i.e Top Stories of Hacker News is a tool which scrapes the front page of Hacker News every 15 min. It combines all the top stories from the last 24 hours and displays it sorted via karma-points the stories have earned. You can check a live demo <a href="http://tshn.sushant-hiray.me"><del>here</del></a>
+<p>TSHN i.e Top Stories of Hacker News is a tool which scrapes the front page of Hacker News every 15 min. It combines all the top stories from the last 24 hours and displays it sorted via karma-points the stories have earned. You can check a live demo <a href="http://tshn.sushant-hiray.me">here</a>
 <hr/>
 
 <h2><a href="https://github.com/sushant-hiray/car-pool">Car Pool</a></h2>
