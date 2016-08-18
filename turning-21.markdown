@@ -17,7 +17,7 @@ Leaving your bygone years behind,
 what's in front of you, you're yet to find.
 {% endhighlight %}
 
-Let's welcome the new year, living 21 images from over the last year.
+Let's welcome the new year, re-living 21 images from over the last year.
 
 ![Blossy 1 year]({{ site.url }}/assets/images/blossy.gif)
 
